@@ -1,0 +1,44 @@
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Second Test",
+  "email": "test2@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+### Dog create
+post http://localhost:3000/dogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI4MTQwMTJ9.Lg94jwTKwy8kQedHOFvpWCy35PpVXKvqPmQ1mRxOx1Q
+
+{ 
+  "name": "Scruffy",
+  "age": "12",
+  "breed": "mutt"
+}
+
+
+
+### example jwt request
+# ### Photos create
+# POST http://localhost:3000/photos.json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjozLCJleHAiOjE2Mjk5OTI4NjR9.G2ExsrDYn3oE0vJkvm4T6Po2GbNpH5cqTEaVPVuK_MA
+# Content-Type: application/json
+
+# {
+#   "name": "Test name",
+#   "width": 640,
+#   "height": 480
+# }
